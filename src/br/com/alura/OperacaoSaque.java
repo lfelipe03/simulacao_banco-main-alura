@@ -2,7 +2,11 @@ package br.com.alura;
 
 import java.math.BigDecimal;
 
+<<<<<<< HEAD
 public class OperacaoSaque {
+=======
+public class OperacaoSaque implements Runnable {
+>>>>>>> 9b095ac (Criando classe AppBanco)
 
     private Conta conta;
     private BigDecimal valor;
@@ -23,4 +27,14 @@ public class OperacaoSaque {
         }
         System.out.println("Finalizando operação de saque.");
     }
+<<<<<<< HEAD
+=======
+
+    @Override
+    public void run() {
+        executa();
+        System.out.println(Thread.currentThread().getName());
+
+    }
+>>>>>>> 9b095ac (Criando classe AppBanco)
 }
